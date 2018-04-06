@@ -1,2 +1,2 @@
 # Settlersof_
-a game based off of settlers of cation
+A game based off of settlers of Catan
