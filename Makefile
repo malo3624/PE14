@@ -4,10 +4,10 @@ CXXFLAGS	= -std=c++11 -ggdb -Wall
 all: pe14
 
 clean:
-	rm pe14.o pe14
+	rm math_utils.o math_utils
 
-board: pe14.o
-	$(CXX) $(CXXFLAGS) main.cc pe14.o -o pe14
+board: math_utils.o
+	$(CXX) $(CXXFLAGS) math_utils.cc pe14.o -o math_utils
 
-pe14.o: pe14.cc
-	$(CXX) $(CXXFLAGS) -c pe14.cc
+pe14.o: math_utils.cc
+	$(CXX) $(CXXFLAGS) -c math_utils.cc
