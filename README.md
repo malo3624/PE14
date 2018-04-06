@@ -1,4 +1,5 @@
 # PE 14 - Version Control (Math methods)
+Partners: Victoria Velasquez, 
 
 Assignment:
 
