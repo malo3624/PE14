@@ -1,4 +1,4 @@
-// partners: Victoria Velasquez, Matthew Louchart
+// partners: Victoria Velasquez, Matthew Louchart, Connor Dowd
 
 #include <math_utils.h>
 #include <math.h>
@@ -14,7 +14,7 @@ bool Math::IsSquare(int num)
 
 int Math::GetDigit(int num, int place)
 {
-  
+
 }
 
 bool Math::EqualParity(int x, int y)
@@ -25,5 +25,10 @@ bool Math::EqualParity(int x, int y)
     return true;
   else
     return false;
-  
+
+}
+
+bool Math::EqualParity(std::vector nums)
+{
+    return false;
 }
