@@ -15,15 +15,19 @@ bool Math::IsSquare(int num)
 
 int Math::GetDigit(int num, int place)
 {
-    int ten_exp = 0;
-    while (place != 1) {
-        place /= 10;
-        ten_exp++;
+    try {
+        int ten_exp = 0;
+        while (place != 1) {
+            place /= 10;
+            ten_exp++;
+        }
+
+        std::string num_string = to_string(num);
+        return (int)num_string[ten_exp-1];
+    } catch {
+        std::cout << "invalid arguement" << std::endl;
+        return 0;
     }
-
-    std::string num_string = to_string(num);
-
-    return (int)num_string[ten_exp-1];
 }
 
 bool Math::EqualParity(int x, int y)
