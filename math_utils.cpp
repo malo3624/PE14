@@ -24,7 +24,7 @@ int Math::GetDigit(int num, int place)
 
         std::string num_string = to_string(num);
         return (int)num_string[ten_exp-1];
-    } catch {
+    } catch (const std::exception&) {
         std::cout << "invalid arguement" << std::endl;
         return 0;
     }
