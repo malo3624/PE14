@@ -19,5 +19,11 @@ int Math::GetDigit(int num, int place)
 
 bool Math::EqualParity(int x, int y)
 {
+  if(x % 2 && y % 2)
+    return true;
+  else if (x % 2 != 0 && x % 2 != 0)
+    return true;
+  else
+    return false;
   
 }
