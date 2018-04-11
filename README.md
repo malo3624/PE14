@@ -1,5 +1,5 @@
 # PE 14 - Version Control (Math methods)
-Partners: Victoria Velasquez, Connor Dowd
+Partners: Victoria Velasquez, Connor Dowd, Matthew Louchart
 
 Assignment:
 
