@@ -1,8 +1,9 @@
 // partners: Victoria Velasquez, Matthew Louchart, Connor Dowd
 
-#include <math_utils.h>
+#include "math_utils.h"
 #include <math.h>
 #include <string>
+#include <iostream>
 
 bool Math::IsSquare(int num)
 {
@@ -22,7 +23,7 @@ int Math::GetDigit(int num, int place)
             ten_exp++;
         }
 
-        std::string num_string = to_string(num);
+        std::string num_string = std::to_string(num);
         return (int)num_string[ten_exp-1];
     } catch (const std::exception&) {
         std::cout << "invalid arguement" << std::endl;
@@ -40,7 +41,18 @@ bool Math::EqualParity(int x, int y)
     return false;
 }
 
-bool Math::EqualParity(std::vector nums)
+bool Math::EqualParity(std::vector<int> nums)
 {
     return false;
 }
+
+/*
+Calulates x for a given a, b, and c, then returns it
+*/
+double Math::solveQuadratic(int a, int b, int c) {
+    double x1 = (-1 * b + sqrt(b * b - 4 * a * c) / 2 * a * c);
+    // to do plus or minus
+    double x2 = (-1 * b - sqrt(b * b - 4 * a * c) / 2 * a * c);
+    return x1;
+}
+
