@@ -59,6 +59,6 @@ int Math::Quadratic(int x1, int x2, int a, int b, int c)
         cout << "x1 and x2 = " << x1 << endl;
               }
     else {
-        cout << "cannot take square root of zero" << endl;
+        cout << "cannot take square root of negative numbers" << endl;
     }
 }
