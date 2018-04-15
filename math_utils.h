@@ -9,6 +9,6 @@ public:
     int GetDigit(int num, int place);
     bool EqualParity(int x, int y);
     bool EqualParity(std::vector nums)
-    int Quadratic(int x);
+    int Quadratic(int x, int a, int b, int c);
 };
 #endif  // _MATH_UTILS_
