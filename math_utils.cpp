@@ -44,3 +44,8 @@ bool Math::EqualParity(std::vector nums)
 {
     return false;
 }
+
+int Math::Quadratic(int x, int a, int b, int c)
+{
+    
+}
