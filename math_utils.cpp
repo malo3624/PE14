@@ -2,7 +2,7 @@
 
 #include "math_utils.h"
 #include <math.h>
-#include <string>
+#include <string.h>
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
