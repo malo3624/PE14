@@ -70,4 +70,5 @@ int Math::Quadratic(int x1, int x2, int a, int b, int c)
     else {
         std::cout << "cannot take square root of negative numbers" << std::endl;
     }
+  return 0;
 }
