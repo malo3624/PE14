@@ -1,11 +1,6 @@
 // partners: Victoria Velasquez, Matthew Louchart, Connor Dowd
 
 #include "math_utils.h"
-#include <math.h>
-#include <string.h>
-#include <iostream>
-#include <stdio.h>
-#include <stdlib.h>
 
 bool Math::IsSquare(int num)
 {
@@ -50,15 +45,13 @@ bool Math::EqualParity(std::vector<int> nums)
             return true;
         else if (nums[i] % 2 != 0 && nums[i] % 2 != 0)
             return true;
-        else
-            return false;
     }
-  return 0;
+  return false;
 }
 
 int Math::Quadratic(int x1, int x2, int a, int b, int c)
 {
-    if ((b*b - 4*a*c) > 0){   
+    if ((b*b - 4*a*c) > 0){
         x1 = (-b + sqrt(b*b - 4*a*c)) / (2*a);
         x2 = (-b - sqrt(b*b - 4*a*c)) / (2*a);
         std::cout << "x1 = " << x1 << std::endl;
