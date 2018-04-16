@@ -14,6 +14,6 @@ public:
     int GetDigit(int num, int place);
     bool EqualParity(int x, int y);
     bool EqualParity(std::vector<int> nums);
-    int Quadratic(int x, int a, int b, int c);
+    int Quadratic(int x1, int x2, int a, int b, int c);
 };
 #endif  // _MATH_UTILS_
