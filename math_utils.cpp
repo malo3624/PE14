@@ -53,6 +53,7 @@ bool Math::EqualParity(std::vector<int> nums)
         else
             return false;
     }
+  return 0;
 }
 
 int Math::Quadratic(int x1, int x2, int a, int b, int c)
