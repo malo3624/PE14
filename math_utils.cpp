@@ -43,25 +43,33 @@ bool Math::EqualParity(int x, int y)
     return false;
 }
 
-bool Math::EqualParity(std::vector nums)
+bool Math::EqualParity(std::vector<int> nums)
 {
-    return false;
+    for (int i = 0; i < nums.size(); i++) {
+        if (nums[i] %2 && nums[i+1] % 2)
+            return true:
+        else if (nums[i] % 2 != 0 && nums[i] % 2 != 0)
+            return true;
+        else
+            return false;
+    }
 }
 
 int Math::Quadratic(int x, int a, int b, int c)
 {
-    inSqrt = b*b - 4*a*c
-    if (inSqrt > 0){   
-        x1 = (-b + sqrt(b*b - 4*a*c) / (2*a);
-        x2 = (-b - sqrt(b*b - 4*a*c) / (2*a);
-        cout << "x1 = " << x1 << endl;
-        cout << "x2 = " << x2 << endl;
+    int inSqrt = b*b - 4*a*c;
+    float x1;
+    if (inSqrt > 0){
+        x1 = (-b + sqrt(b*b - 4*a*c) / (2*a));
+        float x2 = (-b - sqrt(b*b - 4*a*c) / (2*a));
+        std::cout << "x1 = " << x1 << std::endl;
+        std::cout << "x2 = " << x2 << std::endl;
               }
     else if (inSqrt == 0) {
-        x1 = (-b + sqrt(b*b - 4*a*c) / (2*a);
-        cout << "x1 and x2 = " << x1 << endl;
+        x1 = (-b + sqrt(b*b - 4*a*c) / (2*a));
+        std::cout << "x1 and x2 = " << x1 << std::endl;
               }
     else {
-        cout << "cannot take square root of negative numbers" << endl;
+        std::cout << "cannot take square root of negative numbers" << std::endl;
     }
 }
