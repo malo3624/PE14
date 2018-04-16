@@ -47,7 +47,7 @@ bool Math::EqualParity(std::vector<int> nums)
 {
     for (int i = 0; i < nums.size(); i++) {
         if (nums[i] %2 && nums[i+1] % 2)
-            return true:
+            return true;
         else if (nums[i] % 2 != 0 && nums[i] % 2 != 0)
             return true;
         else
