@@ -55,7 +55,7 @@ bool Math::EqualParity(std::vector<int> nums)
     }
 }
 
-int Math::Quadratic(int x, int a, int b, int c)
+int Math::Quadratic(int x1, int x2, int a, int b, int c)
 {
     if ((b*b - 4*a*c) > 0){   
         x1 = (-b + sqrt(b*b - 4*a*c)) / (2*a);
