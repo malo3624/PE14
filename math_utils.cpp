@@ -57,14 +57,13 @@ bool Math::EqualParity(std::vector<int> nums)
 
 int Math::Quadratic(int x, int a, int b, int c)
 {
-    inSqrt = b*b - 4*a*c;
-    if (inSqrt > 0){   
+    if ((b*b - 4*a*c) > 0){   
         x1 = (-b + sqrt(b*b - 4*a*c)) / (2*a);
         x2 = (-b - sqrt(b*b - 4*a*c)) / (2*a);
         std::cout << "x1 = " << x1 << std::endl;
         std::cout << "x2 = " << x2 << std::endl;
               }
-    else if (inSqrt == 0) {
+    else if ((b*b - 4*a*c) == 0) {
         x1 = (-b + sqrt(b*b - 4*a*c)) / (2*a);
         std::cout << "x1 and x2 = " << x1 << std::endl;
               }
