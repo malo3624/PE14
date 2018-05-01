@@ -1,6 +1,9 @@
 // partners: Victoria Velasquez, Matthew Louchart, Connor Dowd
 
 #include "math_utils.h"
+#include <math.h>
+#include <string>
+#include <iostream>
 
 bool Math::IsSquare(int num)
 {
@@ -66,3 +69,14 @@ int Math::Quadratic(int x1, int x2, int a, int b, int c)
     }
   return 0;
 }
+
+/*
+Calulates x for a given a, b, and c, then returns it
+*/
+double Math::solveQuadratic(int a, int b, int c) {
+    double x1 = (-1 * b + sqrt(b * b - 4 * a * c) / 2 * a * c);
+    // to do plus or minus
+    double x2 = (-1 * b - sqrt(b * b - 4 * a * c) / 2 * a * c);
+    return x1;
+}
+

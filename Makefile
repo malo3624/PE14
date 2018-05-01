@@ -1,13 +1,13 @@
 CXX = g++
 CXXFLAGS	= -std=c++11 -ggdb -Wall
 
-all: pe14
+all: math_utils.o test
 
 clean:
-	rm math_utils.o math_utils
+	rm math_utils.o test
 
-board: math_utils.o
-	$(CXX) $(CXXFLAGS) math_utils.cpp pe14.o -o math_utils
+test: math_utils.o test.cpp
+	$(CXX) $(CXXFLAGS) test.cpp math_utils.o -o test
 
-pe14.o: math_utils.cpp
+math_utils.o: math_utils.cpp
 	$(CXX) $(CXXFLAGS) -c math_utils.cpp
