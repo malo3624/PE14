@@ -43,7 +43,31 @@ bool Math::EqualParity(int x, int y)
 
 bool Math::EqualParity(std::vector<int> nums)
 {
-    return false;
+    for (int i = 0; i < nums.size(); i++) {
+        if (nums[i] %2 && nums[i+1] % 2)
+            return true;
+        else if (nums[i] % 2 != 0 && nums[i] % 2 != 0)
+            return true;
+    }
+  return false;
+}
+
+int Math::Quadratic(int x1, int x2, int a, int b, int c)
+{
+    if ((b*b - 4*a*c) > 0){
+        x1 = (-b + sqrt(b*b - 4*a*c)) / (2*a);
+        x2 = (-b - sqrt(b*b - 4*a*c)) / (2*a);
+        std::cout << "x1 = " << x1 << std::endl;
+        std::cout << "x2 = " << x2 << std::endl;
+              }
+    else if ((b*b - 4*a*c) == 0) {
+        x1 = (-b + sqrt(b*b - 4*a*c)) / (2*a);
+        std::cout << "x1 and x2 = " << x1 << std::endl;
+              }
+    else {
+        std::cout << "cannot take square root of negative numbers" << std::endl;
+    }
+  return 0;
 }
 
 /*
